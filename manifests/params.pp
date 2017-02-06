@@ -15,7 +15,6 @@ class megaraid::params {
   }
 
   $msm_pkg = [
-    'Lib_Utils',
     'Lib_Utils2',
     'MegaRAID_Storage_Manager',
     'sas_ir_snmp',
