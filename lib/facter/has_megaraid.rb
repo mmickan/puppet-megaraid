@@ -18,7 +18,7 @@ Facter.add("has_megaraid") do
       # no lspci on this system
     else
       output = Facter::Util::Resolution.exec("#{haslspci}")
-      if output.match(/MegaRAID SAS 1078|MegaSAS 9260|MegaRAID SAS 9240|MegaRAID SAS 2208|MegaRAID SAS 2008/) then
+      if output.match(/MegaRAID SAS 1078|MegaSAS 9260|MegaRAID SAS 9240|MegaRAID SAS 2208|MegaRAID SAS 2108|MegaRAID SAS 2008/) then
         true
       else
         false
