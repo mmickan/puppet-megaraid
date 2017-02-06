@@ -29,9 +29,9 @@ class megaraid::lsiget {
   include wget
 
   $unzip_path       = '/opt/lsi'
-  $package_tardir   = 'lsigetlinux_062012'
-  $package_filename = "${package_tardir}.tgz"
-  $package_url      = "ftp://tsupport:tsupport@ftp0.lsil.com/outgoing_perm/CaptureScripts/${package_filename}"
+  $package_tardir   = 'lsigetlinux_080416'
+  $package_filename = "lsigetlinux_latest.tgz"
+  $package_url      = "ftp://tsupport:tsupport@ftp0.broadcom.com/outgoing_perm/CaptureScripts/${package_filename}"
 
   file { $unzip_path:
     ensure => directory,
